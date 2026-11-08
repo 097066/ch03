@@ -1,0 +1,8 @@
+import streamlit as st
+
+st.text("直接传入本地图片的路径，然后使用st.image()方法进行展示")
+
+c1 , c2 =st.columns([3,1])
+
+c1.image("大熊猫图片.jpg", caption='可爱的大熊猫', clamp='BGR')
+c2.image("大熊猫图片.jpg", caption='可爱的大熊猫', clamp='RGB')
